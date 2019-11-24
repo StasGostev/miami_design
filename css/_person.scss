@@ -1,0 +1,39 @@
+.person {
+  width: 200px;
+  text-align: center;
+  margin: 0 35px;
+  
+  &__img {
+    width: 150px;
+    height: 150px;
+  }
+
+  &__name {
+    font-weight: bold;
+    margin-top: 12px;
+  }
+
+  &__position {
+    margin: 0;
+    color: #696973;
+    font-style: italic;
+  }
+
+  &__text {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 33px;
+      background-image: url('../images/“.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      right: calc(100% - 10px);
+      bottom: calc(100% + 6px);
+    }
+  }
+}

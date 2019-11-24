@@ -1,0 +1,15 @@
+.input {
+  border: none;
+  background-color: #EEEEEE;
+  text-align: center;
+  outline: none;
+  
+  &::placeholder {
+    text-align: center;
+    color: #393939;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36px;
+  }
+}
